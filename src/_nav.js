@@ -18,6 +18,56 @@ import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
 const _nav = [
   {
+    component: CNavTitle,
+    name: 'Machine Learning',
+  },
+  {
+    component: CNavGroup,
+    name: 'Model Management',
+    to: '/model',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Model',
+        to: '/model/Model',
+      },
+      {
+        component: CNavItem,
+        name: 'Model Type',
+        to: '/model/type',
+      },
+    ]
+  },
+  {
+    component: CNavTitle,
+    name: 'Configuration',
+  },
+  {
+    component: CNavItem,
+    name: 'Users',
+    to: '/users',
+    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Roles',
+    to: '/roles',
+    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Permission',
+    to: '/permission',
+    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Menu',
+    to: '/Menu',
+    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+  },
+  {
     component: CNavItem,
     name: 'Dashboard',
     to: '/dashboard',
